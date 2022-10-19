@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;   
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.75)), url("../multimedia/fondo_html.jpg");
+}
+
+.encabezado {
+    width: 100%;
+    position: sticky;
+    top: 1px;
+    z-index: 500;
+    background-color: darkblue;
+}
+
+li {
+    width: 100px;
+    display:  inline-block;
+    text-align: center;
+}
+
+.a_MenuPrincipal {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    width: fit-content;
+
+}
+
+.a_MenuPrincipal:hover {
+    background-color: slategray;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.ul_MenuPrincipal {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    background-color: darkblue;
+    line-height: 4rem;
+    align-items: baseline;
+
+}
+
+.tbl_Encabezado {
+    background-color: black;
+    color: white;
+    text-align: center    ;
+    font-weight: lighter;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.footer {
+    background-color:  rgb(44, 42, 42);
+    color: white;
+    text-align:center;
+    height: 40px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.Whatsapp {
+    position: fixed;
+    bottom: 35px;
+    right: 50px;
+    z-index: 500;
+}
+
+.Redes_Sociales {
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+    z-index: 500;
+}
+
+.grid_principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "principal"
+                            "servicios"
+                            "tecnologias";
+
+}
+
+.principal {
+    grid-area: principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct_principal {
+    display:  inline-block;
+    width: 700px;
+    margin-top: 3%;
+}
+
+
+.tit_novedades {
+    margin-top: 3%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.noticias {
+    width: 450px;
+    height: 270px;
+    margin-top: 3%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    overflow: auto;
+}
+
+.asd_principal p {
+    padding-bottom: 10px;
+    border-style: groove;
+}
+
+.cont_servicios {
+    grid-area: servicios;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(44, 42, 42);
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:    "titulo_serv none none"
+                            "servicios01 servicios02 servicios03";
+
+}
+
+.tit_servicios {
+    grid-area: titulo_serv;
+    color: white;
+    margin-left: 20px;
+}
+
+.servicios01 {
+    grid-area: servicios01;
+}
+
+.servicios02 {
+    grid-area: servicios02;
+}
+
+.servicios03 {
+    grid-area: servicios03;
+}
+
+.cont_servicios img {
+    border-style: inset;
+    border-color: white;
+}
+
+.cont_tecnologias {
+    grid-area: tecnologias;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(44, 42, 42);
+    font-size: 32px;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "tecno01 tecno02 tecno03";
+    justify-content: start;
+    align-content: center;
+}
+
+.cont_tecnologias img {
+    border-style: inset;
+    border-color: white;
+}
+
+.p_msje {
+    grid-area: tecno01;
+    width: 250px;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+}
+
+.tecno_magento {
+    grid-area: tecno02;
+    margin-top: 30px;
+}
+
+.tecno_vtex {
+    grid-area: tecno03;
+    margin-top: 30px;
+}
+
+.cont_tecnologias div {
+    width: 250px;
+    height: 100px;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter ;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.cont_tecnologias p {
+    margin-top: 20px;
+}
+
+.contacto_form input {
+    display: block ;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.contacto_form textarea {
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.contacto_form p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.nosotros_h1 {
+    color: blue;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.nosotros_comentario {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nosotros_comentario  p {
+    display: block;
+    color: blue;
+    font-size: 18px;
+}
+
+.vtex_principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "vtex01 vtex02";
+    justify-content: start;
+    align-items: center;
+}
+
+.vtex_textos {
+    grid-area: vtex02;
+    margin-left: 30px;
+    color: blue;
+    font-weight: bold;
+}
+
+.vtex_video {
+    grid-area: vtex01;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.vtex_comentario_gral {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.vtex_item p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+.nosotros_founder {
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-left: 30%;
+}
+
+.nosotros_team {
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+/* Tamaño tablet 768px */
+@media screen and (max-width: 768px)  {
+    .cont_servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        grid-template-areas:    "titulo_serv ."
+                                "servicios01 servicios02" 
+                                "servicios03 .";
+        justify-items: center;
+    }
+
+    .asd_principal {
+        display: none;
+    }
+
+    .cont_tecnologias {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:    "tecno01 tecno01"
+                                "tecno02 tecno03"; 
+        justify-items: center;
+    }
+
+    .p_msje {
+        margin-top: 0px;
+        width: 100%;
+        height: 30px;
+        margin-left: 10px;
+    }
+    
+    .tecno_magento {
+        margin-top: 10px;
+    }
+
+    .tecno_vtex {
+        margin-top: 10px;
+    }
+
+    .servicios01 {
+        transform: scale(0.9,0.9);
+    }
+
+    .servicios02 {
+        transform: scale(0.9,0.9);
+    }
+
+    .servicios03 {
+        transform: scale(0.9,0.9);
+    }
+
+    .tecno_magento {
+        transform: scale(0.9,0.9);
+    }
+
+    .tecno_vtex {
+        transform: scale(0.9,0.9);
+    }
+
+    .p_msje {
+        font-size: 20px;
+    }
+
+    .tit_servicios {
+        font-size: 28px;
+    }
+    .nosotros_team {
+        margin-left: 30%;
+    }
+}
+
+/* Tamaño celular 500px */
+
+@media screen and (max-width: 500px)  {
+
+    .cont_servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr;
+        grid-template-areas:    "titulo_serv"
+                                "servicios01"
+                                "servicios02" 
+                                "servicios03";
+        justify-items: left;
+    }
+
+    .asd_principal {
+        display: none;
+    }
+
+    .cont_tecnologias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        grid-template-areas:    "tecno01"
+                                "tecno02" 
+                                "tecno03"; 
+        justify-items: left;
+    }
+
+    .p_msje {
+        margin-top: 0px;
+        width: 100%;
+        height: 20px;
+        margin-left: 10px;
+    }
+    
+    .tecno_magento {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .tecno_vtex {
+        margin-top: 10px;
+    }
+
+    .servicios01 {
+        transform: scale(0.9,0.9);
+    }
+
+    .servicios02 {
+        transform: scale(0.9,0.9);
+    }
+
+    .servicios03 {
+        transform: scale(0.9,0.9);
+    }
+
+    .tecno_magento {
+        transform: scale(0.9,0.9);
+    }
+
+    .tecno_vtex {
+        transform: scale(0.9,0.9);
+    }
+
+    .p_msje {
+        font-size: 14px;
+    }
+
+    .tit_servicios {
+        font-size: 20px;
+    }
+
+    .ul_MenuPrincipal {
+        flex-direction: column;
+    }
+
+    .nosotros_team {
+        margin-left: 30%;
+    }
+}
+
+
+
