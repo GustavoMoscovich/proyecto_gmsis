@@ -492,5 +492,13 @@ li {
 
 }
 
+input:focus {
+    height: 40px;
+    background-color: aqua;
+}
+
+textarea:focus {
+    background-color: aqua;
+}
 
 
