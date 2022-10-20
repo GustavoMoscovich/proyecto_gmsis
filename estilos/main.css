@@ -314,13 +314,30 @@ li {
     margin-left: 30%;
 }
 
+
 .nosotros_team {
     align-items: center;
     font-size: 16px;
     font-weight: bold;
 }
 
+.clientes_r1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+.clientes_titulo {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+.clientes img {
+    border-style: inset;
+    border-color: black;
+
+}
 /* RESPONSIVE */
 
 /* Tamaño tablet 768px */
@@ -388,9 +405,11 @@ li {
     .tit_servicios {
         font-size: 28px;
     }
+
     .nosotros_team {
         margin-left: 30%;
     }
+    
 }
 
 /* Tamaño celular 500px */
@@ -467,10 +486,10 @@ li {
     .ul_MenuPrincipal {
         flex-direction: column;
     }
-
     .nosotros_team {
         margin-left: 30%;
     }
+
 }
 
 
